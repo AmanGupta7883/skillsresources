@@ -1,0 +1,693 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.8s ease;
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background-color: tomato;
+    opacity: 0.5;
+    color: white;
+}
+
+section {
+    padding: 2rem 0px;
+}
+
+.img-fluid {
+    margin: auto;
+    margin-left:0;
+}
+
+.PhnIcn {
+    position: absolute;
+    width: 3rem;
+}
+#clicn{
+    display: none;
+}
+
+#slideNavBack {
+     display: block;
+    width: 0vw;
+    height: 100vh;
+/*     background-color: black; */
+    opacity: 0.97;
+    float: right;
+    top: 0;
+    right: 0;
+    position: fixed;
+}
+
+#slideNav {
+   display: block;
+    width: 0vw;
+    height: 100vh;
+/*     background-color: tomato; */
+    background-color: rgba(0,0,0,0.999);
+    float: right;
+    padding-top: 110px;
+    text-align: start;
+    transition: all 0.4s ease;
+}
+
+.headNav {
+    position: fixed;
+/*     background-color: tomato; */
+    background-color: rgb(10 27 76 / 90%);
+    width: 100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 5px 1px black;
+}
+
+#navLogo {
+    width: 16rem;
+    height: auto;
+}
+
+.sideNav {
+    text-align: center;
+    display: flex;
+}
+
+.headCont {
+    width: 100%;
+    height: 100vh;
+    padding:0;
+    background: url(./Images/homebg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mainHeadCont {
+    padding: 0rem 0rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+}
+
+.mainHeadCon2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-top: 9rem;
+    color: #302d2d;
+    text-align: justify;
+    line-height: 30px;
+    background: tomato;
+}
+
+.navContent,
+.navContent a {
+    text-decoration: none;
+    list-style: none;
+    padding: 7px 13px;
+    cursor: pointer;
+    color: white;
+    font-weight: 700;
+    border-radius: 13px;
+    font-size: 1.5rem;
+}
+
+.ulSideNav {
+    display: flex;
+    align-items: center;
+}
+
+li a .enrollBtn {
+    text-decoration: none;
+}
+
+.navContent:hover {
+    background-color: rgb(255, 175, 175);
+    color: black;
+}
+
+.mainQt {
+     text-align: center;
+    color: white;
+    font-weight: 800;
+    font-size: 4rem;
+    line-height: 6rem;
+    margin: auto;
+    margin-top: 1.6em;
+    width: 50%;
+}
+
+.txt2 {
+    font-size: 3rem;
+}
+
+button.btn.btn-default {
+    background: red;
+    color: white;
+    padding: 13px 16px;
+    font-weight: 700;
+    font-size: 1.1rem;
+    box-shadow: 0px 0px 2px 1px black;
+    outline: none;
+    border: none;
+    margin: 15px 0px 0px 0px;
+    width: 50%;
+}
+button.btn.btn-default:hover{
+    transform: scale(0.9);
+}
+
+.aboutsec,
+.certsec {
+    font-weight: 600;
+    text-align: justify;
+    width: 75%;
+    margin: auto;
+}
+
+.ilab {
+    /* background: tomato; */
+    border-radius: 50% 14% 30% 14%;
+    width: 50%;
+    margin-left: 0px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    border-radius: 13px 13px 0px 0px;
+}
+.mainAbout, .mainCertification{
+    background-color: azure;
+}
+
+.mainDashboard,
+.enqFm, .mainFeedboard {
+    background: #e1f3ff;
+}
+
+.mainCertificationSec,
+.mainTrainSec {
+    align-items: center;
+}
+
+.tInt {
+    background: tomato;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    margin: 6px;
+    padding: 13px 8px;
+    border-radius: 8px;
+    width: 20%;
+}
+
+.builtCard {
+    justify-content: space-between;
+}
+
+.footer {
+/*     background-color: tomato; */
+    background-color: rgb(10 27 76 / 90%);
+    padding: 12px 0px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+}
+.fcont{
+    padding-bottom: 13px;
+}
+.cop {
+    font-weight: 600;
+}
+
+.txt1 {
+    font-size: 9rem;
+}
+
+.txt3 {
+    font-size: 2.8rem;
+}
+
+.hamIcon {
+    display: none;
+}
+
+.chat {
+    background-color: tomato;
+    border-radius: 50%;
+    position: fixed;
+    float: right;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 10px;
+    width: 4rem;
+    height: 4rem;
+    cursor: pointer;
+    box-shadow: 0px 0px 6px 1px black;
+}
+
+.chatbox {
+    position: fixed;
+    display: none;
+    width: 30vw;
+    height: 70vh;
+    bottom: 0;
+    right: 0;
+    margin: 0px 0px 0px 0px;
+    box-shadow: 0px 0px 4px 0px black;
+    background-color: #f3fffe;
+    z-index: 9999;
+    flex-direction: column;
+    border-radius: 8px 8px 0px 0px;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.albox {
+    padding: 1rem;
+    text-align: justify;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: capitalize;
+}
+
+.chathead {
+    background-color: tomato;
+    display: flex;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.chtitle {
+    margin: auto;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.clsicn {
+    width: 2rem;
+    padding-left: 4px;
+    cursor: pointer;
+}
+.chatboxin {
+    width: 100%;
+    height: 100%;
+}
+
+.chatQb {
+    width: 100%;
+    height: 64%;
+    overflow:hidden;
+    overflow-y:auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.ques {
+    margin: 13px 0px;
+    background-color: #ffd0d0;
+    padding: 8px 6px;
+    border-radius: 13px;
+}
+.ques:hover{
+        transform: scale(0.9);
+}
+
+.qn {
+    height: 160px;
+    padding: 3px;
+    float: left;
+    clear: right;
+    cursor: pointer;
+    width: 80%;
+}
+
+.chatAns {
+    display:none;
+    font-weight: 500;
+    background-color: tomato;
+    height: 100%;
+    text-align: center;
+    color: wheat;
+    margin-top: 6px;
+    padding-bottom: 8px;
+}
+
+label {
+    display: inline-block;
+    color: #787878;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.cards {
+    display: flex;
+    width: 100%;
+    height: 120px;
+    background-color: #fff;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    margin-top: 50px;
+    align-items: center;
+    overflow: hidden;
+    overflow-x: auto;
+    padding: 10px;
+    padding-right: 0;
+}
+
+.mainFeed {
+    display: flex;
+    width: 450px;
+    margin: auto;
+    overflow: hidden;
+    overflow-x: scroll;
+    padding: 8px;
+    padding-left: 13px;
+}
+
+.fd_b {
+    box-shadow: 0px 0px 13px lightgrey;
+    min-width: 400px;
+    height: 300px;
+    margin: auto;
+    border-radius: 13px;
+    margin: 0px 6px;
+    background-color: azure;
+}
+.fd_b:hover{
+    transition: all 0.2s ease;
+    /* transform: scale(1.00999999999999999999999999999999999); */
+    box-shadow: 0px 0px 8px black;
+}
+
+a{
+    text-decoration:none;
+}
+
+.tel, .mail{
+    background: white;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 8px;
+    margin: 0px 4px;
+    border-radius: 50%;
+    text-align: center;
+}
+.cl:hover, .ml:hover{
+    filter: invert(1);
+}
+.tel:hover{
+    background-color: green;
+}
+.mail:hover{
+    background-color: rgb(255, 187, 0);
+}
+/*******************************/
+.main{
+    background:url(./Images/Cbg.png);
+    background-position: center;
+    background-size: cover;
+}
+.Cmain{
+    width: 100vw;
+    height: 100vh;
+    padding-top: 60px;
+}
+.courses{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.Cf{
+    width: 18rem;
+    height: 25rem;
+    border-radius: 13px;
+    background: rgba(0,0,0,0.9);
+    padding: 8px;
+    margin: 6px;
+}
+.cimg {
+    width: 100%;
+    height: 35%;
+    /* background: url(/Images/c1im.jpg); */
+    background-position: center;
+    background-size: cover;
+    border-radius: 13px;
+    box-shadow: 0px 0px 4px lightgrey;
+}
+ul{
+    margin: 0;
+}
+li {
+    font-weight: 700;
+    color: aliceblue;
+}
+.enbtn{
+    border: none;
+    padding: 3px 20px;
+    border-radius: 13px;
+    background: tomato;
+    color: white;
+    font-weight: 700;
+}
+.backBtn {
+    filter: invert(1);
+}
+.navhead{
+    background-color: rgb(10 27 76 / 90%);
+    position: fixed;
+    width: 100vw;
+}
+/***********************************/
+
+@media only screen and (max-width: 1072px) {
+    .mainHeadCont {
+        flex-direction: column-reverse;
+    }
+
+    .mainAboutSec {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sideNav {
+        display: none;
+    }
+
+    .headNav {
+        justify-content: center;
+    }
+
+    .mainQt {
+        line-height: 5rem;
+    }
+
+    .txt1 {
+        font-size: 7rem;
+    }
+
+    .txt2 {
+        font-size: 2.5rem;
+    }
+
+    .chatbox {
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 857px) {
+    .navContent {
+        margin: 3px 0px;
+    }
+    .img-fluid {
+    margin-left: 0;
+    }
+
+    .mainAbout {
+        padding: 2rem 0rem;
+    }
+
+    nav.navbar.headNav.fixed-top.py-8.px-4.d-flex.align-item-center {
+        justify-content: center;
+        height: 6rem;
+    }
+
+    .head {
+        height: 40px;
+    }
+
+    .mainQt {
+        line-height: 52px;
+        width: 100%;
+        margin: auto;
+        padding: 2px;
+        text-align: center;
+    }
+
+    .aboutsec {
+        width: 100%;
+        text-align: justify;
+    }
+
+    .hamIcon {
+        font-size: 900;
+        color: white;
+        padding: 2px;
+        width: 5rem;
+        display: block;
+        height: 5rem;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        filter: invert(1);
+    }
+
+    .mainTrainSec {
+        flex-direction: column-reverse;
+    }
+
+    .builtCard {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .tInt {
+        width: 80%;
+        font-size: 2rem;
+    }
+
+    .txt1 {
+        font-size: 6rem;
+    }
+
+    .txt2 {
+        font-size: 32px;
+    }
+
+    .txt3 {
+        font-size: 1.8rem;
+    }
+
+    .ilab {
+        width: 70%;
+    }
+
+    .chatbox {
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+
+    .headCont {
+        height: 100vh;
+    }
+
+    .logo {
+        margin: auto;
+        margin-left:0;
+    }
+
+    .mainQt {
+        text-align: center;
+    }
+
+    .mainCertificationSec {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .homeIll {
+        margin: auto;
+        width: 100%;
+        margin-bottom: 2px;
+    }
+
+    .mainQt.d-block {
+        line-height: 4rem;
+    }
+
+    button.btn.btn-default {
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .chatbox {
+        width: 70vw;
+        height: 50vh;
+    }
+
+    .chtitle {
+        font-size: 1.3rem;
+    }
+
+    .clsicn {
+        width: 1.6rem;
+    }
+
+    .albox {
+        padding: 0.2rem;
+        text-align: center;
+        font-size: 13px;
+    }
+    .cop{
+        font-size: 0.9rem;
+    }
+    .title {
+        font-size: 2rem;
+        background: rgb(10 27 76 / 90%);
+        color: white;
+        border-radius: 13px 13px 0px 0px;
+    }
+}
+@media only screen and (max-width: 450px){
+    .fd_b {
+        min-width: 320px;
+    }
+    .mainFeed{
+        width: 90vw;
+    }
+}
+@media only screen and (max-width: 380px){
+.fd_b {
+    min-width: 275px;
+}
+.fd_b {
+    min-width: 80vw;
+}
+}
+@media only screen and (max-width: 380px){
+    .txt1 {
+        font-size: 4.8rem;
+    }
+    .txt2 {
+        font-size: 22px;
+    }
+    .txt3 {
+        font-size: 19px;
+    }
+    .mainQt.d-block {
+        line-height: 3rem;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+    .fd_b {
+        min-width: 80vw;
+    }
+}
