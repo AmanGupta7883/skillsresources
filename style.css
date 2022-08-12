@@ -384,7 +384,14 @@ label {
     border-radius: 13px;
     margin: 0px 6px;
     background-color: azure;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: grey;
+    font-weight: 600;
 }
+
 .fd_b:hover{
     transition: all 0.2s ease;
     /* transform: scale(1.00999999999999999999999999999999999); */
