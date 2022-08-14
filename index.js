@@ -1,6 +1,12 @@
 comingsoon = () => {
     alert('Coming Soon...');
 }
+clstheapp=()=>{
+    document.getElementById('notesApp').style.display='none';
+}
+opentheapp=()=>{
+    document.getElementById('notesApp').style.display='flex';
+}
 chbo = () => {
     // document.getElementById('albox').style.innerHTML="Hi "+ $(name)+", Welcome to Skill Resource! To get any type of help click on the question.";
     document.getElementById('chatbox').style.display = 'block';
