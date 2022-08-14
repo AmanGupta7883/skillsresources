@@ -4,6 +4,7 @@ comingsoon = () => {
 clstheapp=()=>{
     document.getElementById('notesApp').style.display='none';
 }
+
 opentheapp=()=>{
     document.getElementById('notesApp').style.display='flex';
 }
@@ -75,4 +76,32 @@ function signOut() {
     auth2.signOut().then(function () {
         console.log('User signed out.');
     });
+}
+
+Add = () => {
+    // alert("Hello Bhsdk print kyo nhi ho rh abe!!!!!!")
+    let todo = document.getElementById('todo').value;
+    let d = document.createElement('p');
+    let today = new Date();
+    let time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+    let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
+    let dateTime = date+'||'+time;
+    d.innerText=dateTime;
+    d.setAttribute('id','post_dt');
+    let para = document.createElement('p');
+    para.innerText = todo;
+    para.appendChild(d)
+    para.setAttribute("id","paras");
+    para.setAttribute("id","paras");
+    para.setAttribute('oncontextmenu','return false');
+   
+    // document.getElementById('paras').appendChild(d);
+    if (todo == "") {
+        alert('Todo is empty. Please write something')
+    } else {
+        document.getElementById('chat').appendChild(para);
+        
+    }
+    document.getElementById('todo').value = '';
+
 }
